@@ -198,7 +198,7 @@ function App() {
             onClick={handleAccept}
             className="flex-1 py-3 rounded-xl bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold hover:scale-105 transition"
           >
-            {showHearts ? "დეითი ძალაშია, გმადლობთ" : "თანხომბა 💖"}
+            {showHearts ? "დეითი ძალაშია, გმადლობთ" : "თანხმობა 💖"}
           </button>
 
           {!showHearts && (
