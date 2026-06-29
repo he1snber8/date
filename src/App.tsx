@@ -70,7 +70,7 @@ function App() {
     });
   };
 
-  const [showHearts, setShowHearts] = useState(true);
+  const [showHearts, _] = useState(true);
   const [showAcceptanceHearts, setShowAcceptanceHearts] = useState(true);
 
   const handleAccept = () => {
