@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import "./App.css";
-import { AnimatePresence, motion, scale } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useSearchParams } from "react-router-dom";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
@@ -11,19 +11,6 @@ function App() {
   const [searchParams] = useSearchParams();
 
   const gal = searchParams.get("gal");
-
-  const hearts = [
-    { emoji: "💖", top: "8%", left: "12%", rotate: -18, size: "text-3xl" },
-    { emoji: "💕", top: "18%", left: "72%", rotate: 24, size: "text-4xl" },
-    { emoji: "💗", top: "34%", left: "22%", rotate: 12, size: "text-2xl" },
-    { emoji: "💘", top: "48%", left: "80%", rotate: -28, size: "text-5xl" },
-    { emoji: "💞", top: "62%", left: "10%", rotate: 36, size: "text-4xl" },
-    { emoji: "💓", top: "76%", left: "64%", rotate: -12, size: "text-3xl" },
-    { emoji: "💝", top: "88%", left: "28%", rotate: 18, size: "text-5xl" },
-    { emoji: "💖", top: "12%", left: "46%", rotate: -34, size: "text-2xl" },
-    { emoji: "💕", top: "55%", left: "42%", rotate: 14, size: "text-3xl" },
-    { emoji: "💗", top: "70%", left: "88%", rotate: 30, size: "text-2xl" },
-  ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -94,7 +81,6 @@ function App() {
     //   setShowHearts(false);
     // }, 2500);
   };
-  const text = "10 რამ  რაც შენში მხიბლავს";
 
   const groups = [["10", "რამ"], ["რითაც"], ["გონებას"], ["მირევ"]];
 
