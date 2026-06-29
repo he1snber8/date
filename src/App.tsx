@@ -71,9 +71,10 @@ function App() {
   };
 
   const [showHearts, setShowHearts] = useState(true);
+  const [showAcceptanceHearts, setShowAcceptanceHearts] = useState(true);
 
   const handleAccept = () => {
-    setShowHearts(true);
+    setShowAcceptanceHearts(true);
 
     sendInviteResponse();
 
@@ -891,7 +892,7 @@ function App() {
 
         <div className="mt-8 flex gap-3">
           <AnimatePresence>
-            {showHearts && (
+            {showAcceptanceHearts && (
               <div className="fixed inset-0 pointer-events-none overflow-hidden z-50">
                 {[...Array(124)].map((_, i) => (
                   <motion.span
@@ -927,10 +928,10 @@ function App() {
             onClick={handleAccept}
             className="flex-1 py-3 rounded-xl bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold hover:scale-105 transition"
           >
-            {showHearts ? "დეითი ძალაშია, luv u" : "თანხმობა 💖"}
+            {showAcceptanceHearts ? "დეითი ძალაშია, luv u" : "თანხმობა 💖"}
           </button>
 
-          {!showHearts && (
+          {!showAcceptanceHearts && (
             <button
               onMouseEnter={moveDeclineButton}
               onClick={moveDeclineButton}
