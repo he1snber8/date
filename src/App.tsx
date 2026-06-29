@@ -71,7 +71,7 @@ function App() {
   };
 
   const [showHearts, _] = useState(true);
-  const [showAcceptanceHearts, setShowAcceptanceHearts] = useState(true);
+  const [showAcceptanceHearts, setShowAcceptanceHearts] = useState(false);
 
   const handleAccept = () => {
     setShowAcceptanceHearts(true);
