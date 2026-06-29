@@ -1,27 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100..900&display=swap");
+
 @import "tailwindcss";
 
-.react-datepicker {
-  border: 1px solid #fbcfe8 !important;
-  border-radius: 18px !important;
-  overflow: hidden;
-  font-family: inherit !important;
+.geo {
+  font-family: "Noto Serif Georgian", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
-
-.react-datepicker__header {
-  background: #fdf2f8 !important;
-  border-bottom: 1px solid #fbcfe8 !important;
-}
-
-.react-datepicker__current-month,
-.react-datepicker-time__header {
-  color: #db2777 !important;
-}
-
-.react-datepicker__day--selected,
-.react-datepicker__time-list-item--selected {
-  background: #ec4899 !important;
-}
-
 /* :root {
   --text: #6b6375;
   --text-h: #08060d;
