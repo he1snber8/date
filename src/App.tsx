@@ -83,7 +83,7 @@ function App() {
     // }, 2500);
   };
 
-  const groups = [["10", "რამ"], ["რითაც"], ["გონებას"], ["მირევ"]];
+  const groups = [["ოხ!"], ["როგორ"], ["დამწყვიტე"], ["გული!"]];
 
   const pages: Record<number, React.ReactNode> = {
     0: (
@@ -121,7 +121,7 @@ function App() {
           </div>
         </section>
 
-        <motion.button
+        {/* <motion.button
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           onClick={() => setCurrentIndex((prev) => prev + 1)}
@@ -129,7 +129,7 @@ function App() {
           className="text-4xl w-full geo z-9999 bg-pink-300 text-white p-8 px-10 rounded-full mx-auto"
         >
           დაწყება
-        </motion.button>
+        </motion.button> */}
       </>
     ),
 
@@ -1000,7 +1000,7 @@ function App() {
                 }}
                 className="absolute text-3xl"
               >
-                💖
+                💔
               </motion.span>
             ))}
           </div>
